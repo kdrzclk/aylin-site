@@ -99,6 +99,97 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     
 
+  <style>
+  .custom-card {
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+  }
+  .bg-soft-gray { background-color: #f9f9f9; }
+  .bg-soft-cream { background-color: #f5f0e6; }
+  .bg-soft-bluegray { background-color: #e8eef5; }
+  .bg-soft-beige { background-color: #f2e9dc; }
+
+  .category-badge {
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #1a294a;
+  background-color: #d9e0ff;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem; /* Yeni eklendi */
+}
+  .icon-circle {
+    width: 36px;
+    height: 36px;
+    background-color: #1a294a;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15rem;
+  }
+  .blog-meta {
+    font-size: 0.8rem;
+    color: #4b4b4b;
+    margin-bottom: 0.5rem;
+  }
+  .read-more-btn {
+  display: inline-block;
+  background-color: #1a294a;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.read-more-btn:hover {
+  background-color: #274690;
+  color: #fff;
+  text-decoration: none;
+}
+
+  /* Pagination wrapper ve animasyon */
+  .pagination-wrapper {
+  opacity: 1 !important; /* Her zaman görünür */
+  transform: translateY(0) !important;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  position: relative; /* Normal akışta */
+  z-index: 10;
+}
+
+/* İstersen sayfalama stilini biraz güçlendirebilirsin */
+.pagination .page-link {
+  color: #1a294a;
+}
+.pagination .page-item.active .page-link {
+  background-color: #1a294a;
+  border-color: #1a294a;
+  color: #fff;
+}
+
+.icon-circle {
+  margin-right: 0.5rem; /* Varsayılan 1rem yerine 1.5rem yaptık */
+}
+</style>
+
+
+
     </head>
     
     
@@ -232,249 +323,153 @@
         
         </div>
         
-        <section id="servicesBox" class="section-box2" style="background-color:grey;">
-            
-            <div class="container-fluid">
-                
-                <div class="row">
-                    
-                    <div class="col-md-8 offset-md-2 text-center">
-                        
-                        <div class="section-top">
-                            
-                            <h1 class="services-subtitle">Bilgiler</h1>
-                            <hr/>
-                            <p></p>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
-                
-                <div class="row">
-                    
-                    <div class="col-xs-12 col-12 col-lg-4 mb-2">
-                        
-                        <div class="servicesBox-item text-left">
-                            
-                            <a 
-                                href="/blog/bursa_bosanma_avukatı_nafaka_turleri_ve_sureci.html" 
-                                title="Nafaka Türleri ve Süreci" 
-                                data-title="Nafaka Türleri ve Süreci"
-                            >
-                            
-                                <div class="row">
-                                    
-                                    <div class="col-2 mb-2">
-                                        
-                                        <i class="fas fa-users"></i>
-                                    
-                                    </div>
-                                    
-                                    <div class="col-10 mb-2">
-                                        
-                                        <h3 >
-                                            Bursa Boşanma Avukatı ile Nafaka Süreci ve Türleri
-                                        </h3>
-                                        
-                                        <p>
-                                            
-                                            <span style="font-size: medium;">
-                                                
-                                                <b>Bursa boşanma avukatı</b>
-                                            
-                                            </span>
-                                            
-                                            
-                                            ile nafaka süreci önemli bir aşamadır. Nafakanın adil,hakkaniyetli ve hukuka uygun bir şekilde belirlenebilmesi için bu süreç doğru...
-                                        </p>
-                                    
-                                    </div>
-                                
-                                </div>
-                        
-                            </a>
-                        
-                        </div>
-                    
-                    </div>
-                    
-                    <div class="col-xs-12 col-12 col-lg-4 mb-2">
-                        
-                        <div class="servicesBox-item text-left">
-                            
-                            <a 
-                                href="blog/bursa_bosanma_avukatı_ile_yasal_haklarınızı_koruyun.html" 
-                                title="Yasal Haklarınızı Koruyun" 
-                                data-title="Yasal Haklarınızı Koruyun"
-                            >
-                            
-                                <div class="row">
-                                    
-                                    <div class="col-2 mb-2">
-                                        
-                                        <i class="fas fa-briefcase"></i>
-                                    
-                                    </div>
-                                    
-                                    <div class="col-10 mb-2">
-                                        
-                                        <h3>Bursa Boşanma Avukatı ile Yasal Haklarınızı Koruyun</h3>
-                                        
-                                        <p>
-                                            
-                                            <span style="font-size: medium;">
-                                                
-                                                <b>Bursa boşanma avukatı</b>
-                                            
-                                            </span>
-                                            
-                                            ile hayatınızın en karmaşık ve duygusal olarak yıpratıcı dönemlerinden birinde destek aldığınızda, haklarınızı korumanın süreci daha yönetilebilir...
-                                        </p>
-                                    
-                                    </div>
-                                
-                                </div>
-                            
-                            </a>
-                        
-                        </div>
-                    
-                    </div>
-                    
-                    <div class="col-xs-12 col-12 col-lg-4 mb-2">
-                        
-                        <div class="servicesBox-item text-left">
-                            
-                            <a 
-                                href="blog/bursa_boşanma_avukatı_ile_dogru_karar_verin.html" 
-                                title="Doğru Karar Verin" 
-                                data-title="Doğru Karar Verin"
-                            >
-                            
-                                <div class="row">
-                                    
-                                    <div class="col-2 mb-2">
-                                        
-                                        <i class="fas fa-briefcase"></i>
-                                    
-                                    </div>
-                                    
-                                    <div class="col-10 mb-2">
-                                        
-                                        <h3>Bursa Boşanma Avukatı ile Doğru Kararı Verin!</h3>
-                                        
-                                        <p>
-                                            
-                                            <span style="font-size: medium;">
-                                                
-                                                <b>Bursa boşanma avukatı</b>
-                                            
-                                            </span>
-                                            
-                                            boşanma davalarında en doğru kararı verebilmeniz adına hizmet sunmaktadır. Boşanma avukatı müvekkiline sürecin boyutu...
-                                        </p>
-                                    
-                                    </div>
-                                
-                                </div>
-                            
-                            </a>
-                        
-                        </div>
-                    
-                    </div>
-                    
-                    <div class="col-xs-12 col-12 col-lg-4 mb-2">
-                        
-                        <div class="servicesBox-item text-left">
-                            
-                            <a 
-                                href="blog/bursa_bosanma_avukati_fiyatlari.html" 
-                                title="Avukat Fiyatları" 
-                                data-title="Avukat Fiyatları"
-                            >
-                            
-                                <div class="row">
-                                    
-                                    <div class="col-2 mb-2">
-                                        
-                                        <i class="fas fa-user-shield"></i>
-                                    
-                                    </div>
-                                    
-                                    <div class="col-10 mb-2">
-                                        
-                                        <h3>Bursa Boşanma Avukatı Fiyatları</h3>
-                                        
-                                        <p>
-                                            <span style="font-size: medium;">
-                                                
-                                                <b>Bursa boşanma avukatı</b>
-                                            
-                                            </span>
-                                            
-                                            fiyatları çeşitli faktörlere bağlı olarak değişir. Avukatın deneyim süresi, hizmet verdiği şehir, davanın çeşidine ve süresine göre taslak olarak...
-                                        </p>
-                                    
-                                    </div>
-                                
-                                </div>
-                            
-                            </a>
-                        
-                        </div>
-                    
-                    </div>
-                    
-                    <div class="col-xs-12 col-12 col-lg-4 mb-2">
-                        
-                        <div class="servicesBox-item text-left">
-                            
-                            <a 
-                                href="blog/bursa_bosanma_avukati_calisma_alanlari_nelerdir.html" 
-                                title="Çalışma Alanları Nelerdir" 
-                                data-title="Çalışma Alanları Nelerdir"
-                            >
-                            
-                                <div class="row">
-                                    
-                                    <div class="col-2 mb-2">
-                                        
-                                        <i class="fas fa-user-check"></i>
-                                    
-                                    </div>
-                                    
-                                    <div class="col-10 mb-2">
-                                        
-                                        <h3>Bursa Boşanma Avukatı Çalışma Alanları Nelerdir?</h3>
-                                        
-                                        <p>
-                                            <span style="font-size: medium;">
-                                                
-                                                <b>Bursa boşanma avukatı</b>
-                                            
-                                            </span>
-                                            
-                                            aile hukukunda hizmet sunarak, deneyimleri ve başarısıyla bilinmektedir. Boşanma avukatının çalışma alanları geniştir. Danışmanlık...
-                                        </p>
-                                    
-                                    </div>
-                                
-                                </div>
-                            
-                            </a>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
-            
+       <section class="py-5" style="background-color: #f5f5f5;">
+  <div class="container">
+    <div class="row mb-4 text-center">
+      <div class="col-lg-8 offset-lg-2">
+        <h2 class="section-title text-dark">Bilgiler</h2>
+        <div class="section-hr" style="width: 60px; border-top: 3px solid #1a294a; margin: 1rem auto;"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Kart 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card bg-soft-gray h-100 border-0">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <span class="category-badge">Aile Hukuku</span>
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-circle me-3"><i class="fas fa-home"></i></div>
+                <h5 class="mb-0">Nafaka Türleri ve Süreci</h5>
+              </div>
+              <div class="blog-meta">🧑 Av. Aylin Özçelik | 📅 20 Haziran 2025</div>
+              <p><strong>Bursa boşanma avukatı</strong> ile nafaka süreci önemli bir aşamadır...</p>
             </div>
-        
-        </section>
+            <div class="mt-3">
+              <a href="/blog/bursa_bosanma_avukatı_nafaka_turleri_ve_sureci.html" class="read-more-btn">Devamını Oku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kart 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card bg-soft-cream h-100 border-0">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <span class="category-badge">Boşanma Süreci</span>
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-circle me-3"><i class="fas fa-balance-scale"></i></div>
+                <h5 class="mb-0">Yasal Haklarınızı Koruyun</h5>
+              </div>
+              <div class="blog-meta">🧑 Av. Aylin Özçelik | 📅 18 Haziran 2025</div>
+              <p><strong>Bursa boşanma avukatı</strong> ile zorlu süreçte yasal haklarınızı koruyun...</p>
+            </div>
+            <div class="mt-3">
+              <a href="/blog/bursa_bosanma_avukatı_ile_yasal_haklarınızı_koruyun.html" class="read-more-btn">Devamını Oku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kart 3 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card bg-soft-bluegray h-100 border-0">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <span class="category-badge">Danışmanlık</span>
+              <div class="d-flex align-items-center mb-3">
+               <div class="icon-circle me-3"><i class="fas fa-comments"></i></div>
+                <h5 class="mb-0">Doğru Kararı Verin</h5>
+              </div>
+              <div class="blog-meta">🧑 Av. Aylin Özçelik | 📅 15 Haziran 2025</div>
+              <p><strong>Bursa boşanma avukatı</strong> doğru kararı verebilmeniz için destek olur...</p>
+            </div>
+            <div class="mt-3">
+              <a href="/blog/bursa_boşanma_avukatı_ile_dogru_karar_verin.html" class="read-more-btn">Devamını Oku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kart 4 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card bg-soft-beige h-100 border-0">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <span class="category-badge">Fiyatlar</span>
+              <div class="d-flex align-items-center mb-3">
+               <div class="icon-circle me-3"><i class="fas fa-file-invoice-dollar"></i></div>
+                <h5 class="mb-0">Avukat Fiyatları</h5>
+              </div>
+              <div class="blog-meta">🧑 Av. Aylin Özçelik | 📅 10 Haziran 2025</div>
+              <p><strong>Bursa boşanma avukatı</strong> ücretleri farklılık gösterebilir...</p>
+            </div>
+            <div class="mt-3">
+              <a href="/blog/bursa_bosanma_avukati_fiyatlari.html" class="read-more-btn">Devamını Oku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kart 5 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card bg-soft-gray h-100 border-0">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <span class="category-badge">Hizmet Alanları</span>
+              <div class="d-flex align-items-center mb-3">
+               <div class="icon-circle me-3"><i class="fas fa-briefcase"></i></div>
+                <h5 class="mb-0">Çalışma Alanları</h5>
+              </div>
+              <div class="blog-meta">🧑 Av. Aylin Özçelik | 📅 8 Haziran 2025</div>
+              <p><strong>Bursa boşanma avukatı</strong> aile hukuku başta olmak üzere farklı alanlarda çalışır...</p>
+            </div>
+            <div class="mt-3">
+              <a href="/blog/bursa_bosanma_avukati_calisma_alanlari_nelerdir.html" class="read-more-btn">Devamını Oku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kart 6 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card custom-card bg-soft-cream h-100 border-0">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <span class="category-badge">Boşanma Davası</span>
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-circle me-3"><i class="fas fa-gavel"></i></div>
+                <h5 class="mb-0">Boşanma Davasında Deliller</h5>
+              </div>
+              <div class="blog-meta">🧑 Av. Aylin Özçelik | 📅 6 Haziran 2025</div>
+              <p><strong>Deliller</strong> boşanma davasında en önemli unsurlardandır...</p>
+            </div>
+            <div class="mt-3">
+              <a href="#" class="read-more-btn">Devamını Oku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sayfalama -->
+    <div class="pagination-wrapper" id="pagination">
+      <nav aria-label="Sayfalama">
+        <ul class="pagination justify-content-center mb-0">
+          <li class="page-item disabled"><a class="page-link" href="#">Önceki</a></li>
+          <li class="page-item active"><a class="page-link" href="blog-sayfa1.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="blog-sayfa2.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="blog-sayfa3.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="blog-sayfa2.html">Sonraki</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
         
         <div id="telefonButon">
             
@@ -805,6 +800,26 @@
     }
   });
   </script>
+    <!-- <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const pagination = document.getElementById("pagination");
+    const observer = new IntersectionObserver(
+      function (entries) {
+        if (entries[0].isIntersecting) {
+          pagination.classList.add("show");
+        } else {
+          pagination.classList.remove("show");
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    const target = document.querySelector(".row"); // Bootstrap 4 uyumlu
+    if (target) observer.observe(target);
+  });
+</script> -->
+
+
 
 
 
