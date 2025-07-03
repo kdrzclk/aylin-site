@@ -1,0 +1,289 @@
+/* navbar */
+
+.navbar-nav .nav-link {
+  color: #f0f0f0 !important;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #99ffcc !important; /* Hoverda aynı açık mavi */
+}
+
+.dropdown-menu {
+  background-color: rgba(31, 46, 69, 0.95);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-item {
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(77, 166, 255, 0.2);
+  color: #99ffcc;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #99ffcc !important;
+  font-weight: 600;
+  border-bottom: 2px solid #99ffcc;
+}
+
+/* navbar dropdown */
+
+.lwptoc {
+  font-family: sans-serif;
+}
+
+.lwptoc_title {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.lwptoc_item a {
+  display: block;
+  padding: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.lwptoc_item a:hover {
+  text-decoration: underline;
+}
+
+.lwptoc_toggle_label {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.lwptoc_items-hidden {
+  display: none;
+}
+
+/* Alt başlıkları girintili yapalım */
+.lwptoc_itemWrap .lwptoc_itemWrap {
+  padding-left: 20px; /* Alt seviye başlıklar */
+}
+
+.lwptoc_itemWrap .lwptoc_itemWrap .lwptoc_itemWrap {
+  padding-left: 20px; /* Daha da alt seviye başlıklar */
+}
+
+.lwptoc_header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* blog */
+
+.custom-card {
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+}
+
+.bg-soft-gray {
+  background-color: #f9f9f9;
+}
+
+.bg-soft-cream {
+  background-color: #f5f0e6;
+}
+
+.bg-soft-bluegray {
+  background-color: #e8eef5;
+}
+
+.bg-soft-beige {
+  background-color: #f2e9dc;
+}
+
+.category-badge {
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #1a294a;
+  background-color: #d9e0ff;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem; /* Yeni eklendi */
+}
+
+.icon-circle {
+  width: 36px;
+  height: 36px;
+  background-color: #1a294a;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.15rem;
+}
+
+.blog-meta {
+  font-size: 0.8rem;
+  color: #4b4b4b;
+  margin-bottom: 0.5rem;
+}
+
+.read-more-btn {
+  display: inline-block;
+  background-color: #1a294a;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #274690;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Pagination wrapper ve animasyon */
+
+.pagination-wrapper {
+  opacity: 1 !important; /* Her zaman görünür */
+  transform: translateY(0) !important;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  position: relative; /* Normal akışta */
+  z-index: 10;
+}
+
+/* İstersen sayfalama stilini biraz güçlendirebilirsin */
+.pagination .page-link {
+  color: #1a294a;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #1a294a;
+  border-color: #1a294a;
+  color: #fff;
+}
+
+.icon-circle {
+  margin-right: 0.5rem; /* Varsayılan 1rem yerine 1.5rem yaptık */
+}
+
+/* sıkça sorulan sorular */
+
+#faqAccordion {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto 40px auto;
+  padding: 0 15px;
+}
+
+.faq-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  text-align: left;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+}
+
+.faq-subtitle {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+}
+
+.card {
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.card-header {
+  background-color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px 10px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+.card-header.active {
+  background-color: #fff;
+}
+
+.accordion-button {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  transform-origin: center;
+}
+
+.accordion-icon.closed {
+  transform: rotate(0deg);
+}
+
+.accordion-icon.open {
+  transform: rotate(90deg);
+}
+
+.card-body {
+  background-color: #e0e0e0;
+  padding: 14px 20px 18px 20px;
+  border-radius: 0 0 10px 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.card-body.active {
+  background-color: #c3dbff;
+}

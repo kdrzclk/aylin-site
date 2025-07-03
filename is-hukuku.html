@@ -292,48 +292,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <style>
-        .lwptoc {
-            font-family: sans-serif;
-        }
-        .lwptoc_title {
-            font-size: 1.2rem;
-            display: block;
-            margin-bottom: 10px;
-        }
-        .lwptoc_item a {
-            display: block;
-            padding: 5px 0;
-            color: #007bff;
-            text-decoration: none;
-        }
-        .lwptoc_item a:hover {
-            text-decoration: underline;
-        }
-        .lwptoc_toggle_label {
-            cursor: pointer;
-            font-size: 0.9rem;
-        }
-        .lwptoc_items-hidden {
-            display: none;
-        }
-
-        /* 📌 Alt başlıkları girintili yapalım */
-        .lwptoc_itemWrap .lwptoc_itemWrap {
-            padding-left: 20px; /* Alt seviye başlıklar */
-        }
-        .lwptoc_itemWrap .lwptoc_itemWrap .lwptoc_itemWrap {
-            padding-left: 20px; /* Daha da alt seviye başlıklar */
-        }
-        .lwptoc_header {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-    </style>
-
-
-
+   
+     <link rel="stylesheet" href="css/style.css">
 
   </head>
 
@@ -341,227 +301,69 @@
 
   <body>
     <header>
-      <!-- Navigation Menu-->
 
-      <nav
-        class="navbar navbar-container navbar-expand-lg navbar-light py-2"
-        id="mainNav"
-        style="background-color: #00008b70"
-      >
-        <div class="container">
-          <a class="navbar-brand mr-auto" href="index.html" title="">
-            <div id="logo-container" style="color: white; font-size: 24px">
-              <img
-                src="images/anasayfa_logo.png"
-                alt="AV. Aylin Özçelik Logo"
-                style="height: 50px"
-              />
-              AV. AYLİN ÖZÇELİK
-            </div>
-          </a>
+            <!-- Navigation Menu-->
+            
+            <nav class="navbar navbar-container navbar-expand-lg navbar-light py-2" id="mainNav" style="background-color: rgba(31, 46, 69, 0.95);">
+                <div class="container">
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                    <a class="navbar-brand mr-auto" href="index.html" title="">
+                        <div id="logo-container" style="color:white; font-size: 24px;">
+                            <img src="images/anasayfa_logo.png" alt="AV. Aylin Özçelik Logo" style="height: 40px;">
+                            AV. AYLİN ÖZÇELİK
+                        </div>
+                    </a>
 
-          <div id="navbarResponsive" class="collapse navbar-collapse">
-            <ul id="menu-ust-menu" class="navbar-nav m-auto">
-              <li
-                itemscope="itemscope"
-                itemtype="https://www.schema.org/SiteNavigationElement"
-                id="menu-item-1452"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item"
-              >
-                <a title="Anasayfa" href="index.html" class="nav-link"
-                  >Anasayfa</a
-                >
-              </li>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-              <li
-                itemscope="itemscope"
-                itemtype="https://www.schema.org/SiteNavigationElement"
-                id="menu-item-20"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item"
-              >
-                <a title="Hakkımızda" href="hakkimizda.html" class="nav-link"
-                  >Hakkımızda</a
-                >
-              </li>
+                    <div id="navbarResponsive" class="collapse navbar-collapse">
 
-              <li
-                itemscope="itemscope"
-                itemtype="https://www.schema.org/SiteNavigationElement"
-                id="menu-item-3347"
-                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children dropdown active menu-item-3347 nav-item"
-              >
-                <a
-                  title="Çalışma Alanlarımız"
-                  href="#"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  class="dropdown-toggle nav-link"
-                  id="menu-item-dropdown-3347"
-                  >Çalışma Alanlarımız</a
-                >
+                        <ul class="navbar-nav m-auto">
 
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="menu-item-dropdown-3347"
-                  role="menu"
-                >
-                  <li
-                    itemscope="itemscope"
-                    itemtype="https://www.schema.org/SiteNavigationElement"
-                    id="menu-item-4033"
-                    class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4033 nav-item"
-                  >
-                    <a
-                      title="Aile Hukuku"
-                      href="aile-hukuku.html"
-                      class="dropdown-item"
-                      >Aile Hukuku</a
-                    >
-                  </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Anasayfa</a>
+                            </li>
 
-                  <li
-                    itemscope="itemscope"
-                    itemtype="https://www.schema.org/SiteNavigationElement"
-                    id="menu-item-4032"
-                    class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4032 nav-item"
-                  >
-                    <a
-                      title="İş Hukuku"
-                      href="is-hukuku.html"
-                      class="dropdown-item"
-                      >İş Hukuku</a
-                    >
-                  </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                            </li>
 
-                  <li
-                    itemscope="itemscope"
-                    itemtype="https://www.schema.org/SiteNavigationElement"
-                    id="menu-item-4031"
-                    class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4031 nav-item"
-                  >
-                    <a
-                      title="Kişisel Verilerin Korunması Hukuku"
-                      href="kvkk.html"
-                      class="dropdown-item"
-                      >Kişisel Verilerin Korunması Hukuku</a
-                    >
-                  </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Çalışma Alanlarımız
+                                </a>
+                                <div class="dropdown-menu shadow rounded" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="aile-hukuku.html">Aile Hukuku</a>
+                                    <a class="dropdown-item active" href="is-hukuku.html">İş Hukuku</a>
+                                    <a class="dropdown-item" href="kvkk.html">Kişisel Verilerin Korunması Hukuku</a>
+                                    <a class="dropdown-item" href="miras-hukuku.html">Miras Hukuku</a>
+                                    <a class="dropdown-item" href="tüketici-hukuku.html">Tüketici Hukuku</a>
+                                    <a class="dropdown-item" href="icra-iflas-hukuku.html">İcra ve İflas Hukuku</a>
+                                    <a class="dropdown-item" href="ceza-hukuku.html">Ceza Hukuku</a>
+                                    <a class="dropdown-item" href="gumruk-hukuku.html">Gümrük Hukuku</a>
+                                </div>
+                            </li>
 
-                  <li
-                    itemscope="itemscope"
-                    itemtype="https://www.schema.org/SiteNavigationElement"
-                    id="menu-item-4162"
-                    class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4162 nav-item"
-                  >
-                    <a
-                      title="Miras Hukuku"
-                      href="miras-hukuku.html"
-                      class="dropdown-item"
-                      >Miras Hukuku</a
-                    >
-                  </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
 
-                  <li
-                    itemscope="itemscope"
-                    itemtype="https://www.schema.org/SiteNavigationElement"
-                    id="menu-item-4030"
-                    class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4030 nav-item"
-                  >
-                    <a
-                      title="Tüketici Hukuku"
-                      href="tüketici-hukuku.html"
-                      class="dropdown-item"
-                      >Tüketici Hukuku</a
-                    >
-                  </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="iletisim.html">İletişim</a>
+                            </li>
 
-                  <li
-                    itemscope="itemscope"
-                    itemtype="https://www.schema.org/SiteNavigationElement"
-                    id="menu-item-4029"
-                    class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4029 nav-item"
-                  >
-                    <a
-                      title="İcra ve İflas Hukuku"
-                      href="icra-iflas-hukuku.html"
-                      class="dropdown-item"
-                      >İcra ve İflas Hukuku</a
-                    >
-                  </li>
+                        </ul>
 
-                  <li
-                    itemscope="itemscope"
-                    itemtype="https://www.schema.org/SiteNavigationElement"
-                    id="menu-item-4028"
-                    class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4028 nav-item"
-                  >
-                    <a
-                      title="Ceza Hukuku"
-                      href="ceza-hukuku.html"
-                      class="dropdown-item"
-                      >Ceza Hukuku</a
-                    >
-                  </li>
+                    </div>
 
-                  <li
-                    itemscope="itemscope"
-                    itemtype="https://www.schema.org/SiteNavigationElement"
-                    id="menu-item-4085"
-                    class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4085 nav-item"
-                  >
-                    <a
-                      title="Gümrük Hukuku"
-                      href="gumruk-hukuku.html"
-                      class="dropdown-item"
-                      >Gümrük Hukuku</a
-                    >
-                  </li>
-                </ul>
-              </li>
+                </div>
+            </nav>
 
-              <li
-                itemscope="itemscope"
-                itemtype="https://www.schema.org/SiteNavigationElement"
-                id="menu-item-22"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22 nav-item"
-              >
-                <a title="blog" href="blog.html" class="nav-link">Blog</a>
-              </li>
-
-              <li
-                itemscope="itemscope"
-                itemtype="https://www.schema.org/SiteNavigationElement"
-                id="menu-item-22"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22 nav-item"
-              >
-                <a title="İletişim" href="iletisim.html" class="nav-link"
-                  >İletişim</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- <div class="d-lg-block mx-auto d-none">
-                        
-                        <a href="/iletisim" class="teklifAlButon">RANDEVU AL</a>
-                    
-                    </div> -->
-        </div>
-      </nav>
-    </header>
+        </header>
 
     <!-- Page İnside Section-->
     <div
@@ -1014,7 +816,7 @@
 
     <!-- Footer Section-->
 
-    <footer class="footer" style="background-color: #000080;">
+    <footer class="footer" style="background-color: rgba(31, 46, 69, 0.95);;">
 
         <div class="container">
 

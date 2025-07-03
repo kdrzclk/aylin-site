@@ -98,6 +98,7 @@
         <meta name="msapplication-TileImage" content="https://avbusramizen.com/wp-content/uploads/2020/03/cropped-logo-avukat-270x270.png" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
+		<link rel="stylesheet" href="/css/style.css">
     </head>
 	
 	
@@ -105,122 +106,69 @@
 	<body>
 
 		<header>
-			<!-- Navigation Menu-->
-			<nav class="navbar navbar-container navbar-expand-lg navbar-light py-2" id="mainNav" style="background-color:		#00008B70;">
 
-				<div class="container">
+            <!-- Navigation Menu-->
+            
+            <nav class="navbar navbar-container navbar-expand-lg navbar-light py-2" id="mainNav" style="background-color: rgba(31, 46, 69, 0.95);">
+                <div class="container">
 
-					<a class="navbar-brand mr-auto" href="http://127.0.0.1:5500/index.html" title="">
-						<div id="logo-container" style="color:white; font-size: 24px;">
-							<img src="/images/anasayfa_logo.png" alt="AV. Aylin Özçelik Logo" style="height: 50px;"> AV. AYLİN ÖZÇELİK
-						</div>
-					</a>
-					
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					
-					<div id="navbarResponsive" class="collapse navbar-collapse">
+                    <a class="navbar-brand mr-auto" href="/index.html" title="">
+                        <div id="logo-container" style="color:white; font-size: 24px;">
+                            <img src="/images/anasayfa_logo.png" alt="AV. Aylin Özçelik Logo" style="height: 40px;">
+                            AV. AYLİN ÖZÇELİK
+                        </div>
+                    </a>
 
-						<ul id="menu-ust-menu" class="navbar-nav m-auto">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item">
-								
-								<a title="Anasayfa" href="/index.html" class="nav-link">Anasayfa</a>
+                    <div id="navbarResponsive" class="collapse navbar-collapse">
 
-							</li>
-							
-							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item">
+                        <ul class="navbar-nav m-auto">
 
-								<a title="Hakkımızda" href="/hakkimizda.html" class="nav-link">Hakkımızda</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">Anasayfa</a>
+                            </li>
 
-							</li>
-							
-							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-3347 nav-item">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hakkimizda.html">Hakkımızda</a>
+                            </li>
 
-								<a title="Çalışma Alanlarımız" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-3347">Çalışma Alanlarımız</a>
-								
-								<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-3347" role="menu">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Çalışma Alanlarımız
+                                </a>
+                                <div class="dropdown-menu shadow rounded" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/aile-hukuku.html">Aile Hukuku</a>
+                                    <a class="dropdown-item" href="/is-hukuku.html">İş Hukuku</a>
+                                    <a class="dropdown-item" href="/kvkk.html">Kişisel Verilerin Korunması Hukuku</a>
+                                    <a class="dropdown-item" href="/miras-hukuku.html">Miras Hukuku</a>
+                                    <a class="dropdown-item" href="/tüketici-hukuku.html">Tüketici Hukuku</a>
+                                    <a class="dropdown-item" href="/icra-iflas-hukuku.html">İcra ve İflas Hukuku</a>
+                                    <a class="dropdown-item" href="/ceza-hukuku.html">Ceza Hukuku</a>
+                                    <a class="dropdown-item" href="/gumruk-hukuku.html">Gümrük Hukuku</a>
+                                </div>
+                            </li>
 
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4033" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4033 nav-item">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/blog.html">Blog</a>
+                            </li>
 
-										<a title="Aile Hukuku" href="/aile-hukuku.html" class="dropdown-item">Aile Hukuku</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/iletisim.html">İletişim</a>
+                            </li>
 
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4032" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4032 nav-item">
-										
-										<a title="İş Hukuku" href="/is-hukuku.html" class="dropdown-item">İş Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4031" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4031 nav-item">
-										
-										<a title="Kişisel Verilerin Korunması Hukuku" href="/kvkk.html" class="dropdown-item">Kişisel Verilerin Korunması Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4162" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4162 nav-item">
-										
-										<a title="Miras Hukuku" href="/miras-hukuku.html" class="dropdown-item">Miras Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4030" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4030 nav-item">
-										
-										<a title="Tüketici Hukuku" href="/tüketici-hukuku.html" class="dropdown-item">Tüketici Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4029" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4029 nav-item">
-										
-										<a title="İcra ve İflas Hukuku" href="/icra-iflas-hukuku.html" class="dropdown-item">İcra ve İflas Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4028" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4028 nav-item">
-										
-										<a title="Ceza Hukuku" href="/ceza-hukuku.html" class="dropdown-item">Ceza Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4085" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4085 nav-item">
-										
-										<a title="Gümrük Hukuku" href="/gumruk-hukuku.html" class="dropdown-item">Gümrük Hukuku</a>
-									
-									</li>
-								
-								</ul>
-							
-							</li>
-							
-							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item active menu-item-1452 nav-item">
-								
-								<a title="blog" href="/blog.html" class="nav-link">Blog</a>
-							
-							</li>
-							
-							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22 nav-item">
-								
-								<a title="İletişim" href="/iletisim.html" class="nav-link">İletişim</a>
-							
-							</li>
-						
-						</ul>
-					
-					</div>
-					
-					<!-- <div class="d-lg-block mx-auto d-none">
-						
-						<a href="/iletisim" class="teklifAlButon">RANDEVU AL</a>
-					
-					</div> -->
+                        </ul>
 
-				</div>
+                    </div>
 
-			</nav>
+                </div>
+            </nav>
 
-		</header>
+        </header>
 		
 		<div class="page-header page-image" style="background-image:url(/images/logo_terazi6.png);">
 			
@@ -401,77 +349,77 @@
 
 	<!-- Footer Section-->
 
-	<footer class="footer" style="background-color: #000080;">
+	<footer class="footer" style="background-color: rgba(31, 46, 69, 0.95);;">
 
-		<div class="container">
+        <div class="container">
 
-			<div class="row">
+            <div class="row">
 
-				<div class="col-12 col-md col-sm-6">
-					
-					<section id="text-3" class="widget widget_text">
-						
-						<h3 class="widget-title">Av. Aylin ÖZÇELİK</h3>
-						
-						<div class="textwidget">
-							
-							<p>2016 yılında Yalova Üniversitesi Hukuk Fakültesinden mezun oldum. 2017 yılından beri mesleğimi kendi ofisimde icra etmekteyim.</p>
-						
-						</div>
-					
-					</section>
-					
-					<section id="custom_html-2" class="widget_text widget widget_custom_html">
-						
-						<div class="textwidget custom-html-widget"><br/>
-							
-							<a href="/iletisim.html" class="teklifAlButon rounded m-0 mb-4">Bize Ulaşın</a>
-						
-						</div>
-					
-					</section>
-					
-					<section id="recent-posts-4" class="widget widget_recent_entries">
-						
-						<h3 class="widget-title">Faydalı Bilgiler</h3>
-						
-						<ul>
-							
-							<li>
-								
-								<a href="bursa_bosanma_avukatı_ile_yasal_haklarınızı_koruyun.html">Bursa Boşanma Avukatı ile Yasal Haklarınızı Koruyun</a>
-							
-							</li>
-							
-							<li>
-								
-								<a href="bursa_bosanma_avukatı_nafaka_turleri_ve_sureci.html">Bursa Boşanma Avukatı ile Nafaka Süreci ve Türleri</a>
-							
-							</li>
-							
-							<li>
-								
-								<a href="bursa_boşanma_avukatı_ile_dogru_karar_verin.html">Bursa Boşanma Avukatı ile Doğru Kararı Verin!</a>
-							
-							</li>
-							
-							<li>
-								
-								<a href="bursa_bosanma_avukati_fiyatlari.html">Bursa Boşanma Avukatı Fiyatları</a>
-							
-							</li>
-							
-							<li>
-								
-								<a href="#">Bursa Boşanma Avukatı Çalışma Alanları Nelerdir?</a>
-							
-							</li>
-						
-						</ul>
-					
-					</section>
-					
-					<ul class="list-inline social-buttons text-left mt-3 mb-3">
+                <div class="col-12 col-md col-sm-6">
+                    
+                    <section id="text-3" class="widget widget_text">
+                        
+                        <h3 class="widget-title">Av. Aylin ÖZÇELİK</h3>
+                        
+                        <div class="textwidget">
+                            
+                            <p>2016 yılında Yalova Üniversitesi Hukuk Fakültesinden mezun oldum. 2017 yılından beri mesleğimi kendi ofisimde icra etmekteyim.</p>
+                        
+                        </div>
+                    
+                    </section>
+                    
+                    <section id="custom_html-2" class="widget_text widget widget_custom_html">
+                        
+                        <div class="textwidget custom-html-widget"><br/>
+                            
+                            <a href="/iletisim.html" class="teklifAlButon rounded m-0 mb-4">Bize Ulaşın</a>
+                        
+                        </div>
+                    
+                    </section>
+                    
+                    <section id="recent-posts-4" class="widget widget_recent_entries">
+                        
+                        <h3 class="widget-title">Faydalı Bilgiler</h3>
+                        
+                        <ul>
+                            
+                            <li>
+                                
+                                <a href="bursa_bosanma_avukatı_ile_yasal_haklarınızı_koruyun.html">Bursa Boşanma Avukatı ile Yasal Haklarınızı Koruyun</a>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <a href="bursa_bosanma_avukatı_nafaka_turleri_ve_sureci.html">Bursa Boşanma Avukatı ile Nafaka Süreci ve Türleri</a>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <a href="bursa_boşanma_avukatı_ile_dogru_karar_verin.html">Bursa Boşanma Avukatı ile Doğru Kararı Verin!</a>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <a href="bursa_bosanma_avukati_fiyatlari.html">Bursa Boşanma Avukatı Fiyatları</a>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <a href="bursa_bosanma_avukati_calisma_alanlari_nelerdir.html">Bursa Boşanma Avukatı Çalışma Alanları Nelerdir?</a>
+                            
+                            </li>
+                        
+                        </ul>
+                    
+                    </section>
+                    
+                    <ul class="list-inline social-buttons text-left mt-3 mb-3">
                         
                         <li class="list-inline-item">
                             
@@ -524,68 +472,68 @@
                         </li>
 
                     </ul>
-				
-				</div>
-				
-				<div class="col-12 col-md col-sm-6">
-					
-					<section id="text-4" class="widget widget_text">
-						
-						<h3 class="widget-title">İletişim</h3>
-						
-						<div class="textwidget">
-							
-							<p>Hacı İlyas Mah. 2. Tezcan Sk. No:2 Arslantaş İş Merkezi K:3 D:18 Osmangazi/BURSA</p>
-							
-							<p>
-								
-								<strong><i class="fas fa-phone-alt phone-icon"></i> Tel:</strong><br />
-								
-								<a href="tel:+905464993788" class="phone-link">0546 499 3788</a>
-							
-							</p>
-							
-							<p>
-								
-								<strong><i class="fas fa-envelope email-icon"></i> E-Mail;<br />
-								
-								</strong>
-								
-								<a href="mailto:av.aylinsahin@gmail.com">av.aylinsahin@gmail.com</a>
-							
-							</p>
-						
-						</div>
-					
-					</section>
-				
-				</div>
-			
-			</div>
-			
-			<!-- .widget-area -->
-			
-		</div>
-		
-		<div class="row site-info">
-			
-			<div class="container">
-				
-				<div class="row">
-					
-					<div class="text-center my-auto footer-etiket d-block w-100">Bu sitede yer alan tüm yazılı ve görsel materyaller avaylinozcelik.com sitesine ve site sahibine aittir. Copyright &copy; 2018 - 2025
+                
+                </div>
+                
+                <div class="col-12 col-md col-sm-6">
+                    
+                    <section id="text-4" class="widget widget_text">
+                        
+                        <h3 class="widget-title">İletişim</h3>
+                        
+                        <div class="textwidget">
+                            
+                            <p>Hacı İlyas Mah. 2. Tezcan Sk. No:2 Arslantaş İş Merkezi K:3 D:18 Osmangazi/BURSA</p>
+                            
+                            <p>
+                                
+                                <strong><i class="fas fa-phone-alt phone-icon"></i> Tel:</strong><br />
+                                
+                                <a href="tel:+905464993788" class="phone-link">0546 499 3788</a>
+                            
+                            </p>
+                            
+                            <p>
+                                
+                                <strong><i class="fas fa-envelope email-icon"></i> E-Mail;<br />
+                                
+                                </strong>
+                                
+                                <a href="mailto:av.aylinsahin@gmail.com">av.aylinsahin@gmail.com</a>
+                            
+                            </p>
+                        
+                        </div>
+                    
+                    </section>
+                
+                </div>
+            
+            </div>
+            
+            <!-- .widget-area -->
+            
+        </div>
+        
+        <div class="row site-info">
+            
+            <div class="container">
+                
+                <div class="row">
+                    
+                    <div class="text-center my-auto footer-etiket d-block w-100">Bu sitede yer alan tüm yazılı ve görsel materyaller avaylinozcelik.com sitesine ve site sahibine aittir. Copyright &copy; 2018 - 2025
 
-					</div>
-				
-				</div>
-			
-			</div>
-		
-		</div>
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </div>
 
-	</div>
+    </div>
 
-	</footer>
+    </footer>
 
 
 	<!-- Site Kit tarafından eklenen Google etiketi (gtag.js) snippet&#039;i -->

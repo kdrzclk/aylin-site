@@ -99,106 +99,10 @@
 		
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-        <style>
-            body {
-            background-color: #f0f2f5;
-            margin: 0; padding: 0;
-            }
 
-            #faqAccordion {
-            width: 100%;
-            max-width: 900px;
-            margin: 20px auto 40px auto;
-            padding: 0 15px;
-            }
-
-            .faq-title {
-            font-weight: 700;
-            font-size: 2rem;
-            margin-bottom: 0.3rem;
-            text-align: left;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 15px;
-            }
-
-            .faq-subtitle {
-            color: #6c757d;
-            margin-bottom: 1.5rem;
-            text-align: left;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 15px;
-            }
-
-            .card {
-            border-radius: 10px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            border: none;
-            }
-
-            .card-header {
-            background-color: #fff;
-            padding: 12px 20px;
-            border-radius: 10px 10px 0 0;
-            transition: background-color 0.3s ease;
-            }
-
-            .card-header.active {
-            background-color: #fff;
-            }
-
-            .accordion-button {
-            width: 100%;
-            background: none;
-            border: none;
-            padding: 0;
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: #222;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            }
-
-            .accordion-icon {
-            font-size: 1.5rem;
-            color: #007bff;
-            transition: transform 0.3s ease;
-            display: inline-block;
-            transform-origin: center;
-            }
-
-            .accordion-icon.closed {
-            transform: rotate(0deg);
-            }
-
-            .accordion-icon.open {
-            transform: rotate(90deg);
-            }
-
-            .card-body {
-            background-color: #e0e0e0;
-            padding: 14px 20px 18px 20px;
-            border-radius: 0 0 10px 10px;
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #444;
-            box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
-            transition: background-color 0.3s ease;
-            }
-
-            .card-body.active {
-            background-color: #c3dbff;
-            }
-        </style>
-
-       
+        <link rel="stylesheet" href="css/style.css">      
     </head>
 	
 	
@@ -206,122 +110,69 @@
 	<body class="bg-light">
 
 		<header>
-			<!-- Navigation Menu-->
-			<nav class="navbar navbar-container navbar-expand-lg navbar-light py-2" id="mainNav" style="background-color:		#00008B70;">
 
-				<div class="container">
+            <!-- Navigation Menu-->
+            
+            <nav class="navbar navbar-container navbar-expand-lg navbar-light py-2" id="mainNav" style="background-color: rgba(31, 46, 69, 0.95);">
+                <div class="container">
 
-					<a class="navbar-brand mr-auto" href="http://127.0.0.1:5500/index.html" title="">
-						<div id="logo-container" style="color:white; font-size: 24px;">
-							<img src="/images/anasayfa_logo.png" alt="AV. Aylin Özçelik Logo" style="height: 50px;"> AV. AYLİN ÖZÇELİK
-						</div>
-					</a>
-					
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					
-					<div id="navbarResponsive" class="collapse navbar-collapse">
+                    <a class="navbar-brand mr-auto" href="index.html" title="">
+                        <div id="logo-container" style="color:white; font-size: 24px;">
+                            <img src="images/anasayfa_logo.png" alt="AV. Aylin Özçelik Logo" style="height: 40px;">
+                            AV. AYLİN ÖZÇELİK
+                        </div>
+                    </a>
 
-						<ul id="menu-ust-menu" class="navbar-nav m-auto">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item">
-								
-								<a title="Anasayfa" href="/index.html" class="nav-link">Anasayfa</a>
+                    <div id="navbarResponsive" class="collapse navbar-collapse">
 
-							</li>
-							
-							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item">
+                        <ul class="navbar-nav m-auto">
 
-								<a title="Hakkımızda" href="/hakkimizda.html" class="nav-link">Hakkımızda</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Anasayfa</a>
+                            </li>
 
-							</li>
-							
-							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-3347 nav-item">
+                            <li class="nav-item">
+                                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                            </li>
 
-								<a title="Çalışma Alanlarımız" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-3347">Çalışma Alanlarımız</a>
-								
-								<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-3347" role="menu">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Çalışma Alanlarımız
+                                </a>
+                                <div class="dropdown-menu shadow rounded" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="aile-hukuku.html">Aile Hukuku</a>
+                                    <a class="dropdown-item" href="is-hukuku.html">İş Hukuku</a>
+                                    <a class="dropdown-item" href="kvkk.html">Kişisel Verilerin Korunması Hukuku</a>
+                                    <a class="dropdown-item" href="miras-hukuku.html">Miras Hukuku</a>
+                                    <a class="dropdown-item" href="tüketici-hukuku.html">Tüketici Hukuku</a>
+                                    <a class="dropdown-item" href="icra-iflas-hukuku.html">İcra ve İflas Hukuku</a>
+                                    <a class="dropdown-item" href="ceza-hukuku.html">Ceza Hukuku</a>
+                                    <a class="dropdown-item" href="gumruk-hukuku.html">Gümrük Hukuku</a>
+                                </div>
+                            </li>
 
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4033" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4033 nav-item">
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
 
-										<a title="Aile Hukuku" href="/aile-hukuku.html" class="dropdown-item">Aile Hukuku</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="iletisim.html">İletişim</a>
+                            </li>
 
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4032" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4032 nav-item">
-										
-										<a title="İş Hukuku" href="/is-hukuku.html" class="dropdown-item">İş Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4031" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4031 nav-item">
-										
-										<a title="Kişisel Verilerin Korunması Hukuku" href="/kvkk.html" class="dropdown-item">Kişisel Verilerin Korunması Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4162" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4162 nav-item">
-										
-										<a title="Miras Hukuku" href="/miras-hukuku.html" class="dropdown-item">Miras Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4030" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4030 nav-item">
-										
-										<a title="Tüketici Hukuku" href="/tüketici-hukuku.html" class="dropdown-item">Tüketici Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4029" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4029 nav-item">
-										
-										<a title="İcra ve İflas Hukuku" href="/icra-iflas-hukuku.html" class="dropdown-item">İcra ve İflas Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4028" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4028 nav-item">
-										
-										<a title="Ceza Hukuku" href="/ceza-hukuku.html" class="dropdown-item">Ceza Hukuku</a>
-									
-									</li>
-									
-									<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-4085" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-submenu menu-item-4085 nav-item">
-										
-										<a title="Gümrük Hukuku" href="/gumruk-hukuku.html" class="dropdown-item">Gümrük Hukuku</a>
-									
-									</li>
-								
-								</ul>
-							
-							</li>
-							
-							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item">
-								
-								<a title="blog" href="/blog.html" class="nav-link">Blog</a>
-							
-							</li>
-							
-							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22 nav-item">
-								
-								<a title="İletişim" href="/iletisim.html" class="nav-link">İletişim</a>
-							
-							</li>
-						
-						</ul>
-					
-					</div>
-					
-					<!-- <div class="d-lg-block mx-auto d-none">
-						
-						<a href="/iletisim" class="teklifAlButon">RANDEVU AL</a>
-					
-					</div> -->
+                        </ul>
 
-				</div>
+                    </div>
 
-			</nav>
+                </div>
+            </nav>
 
-		</header>
+        </header>
 		
 		<div class="page-header page-image" style="background-image:url(/images/logo_terazi8.png);">
 			
@@ -467,7 +318,7 @@
         
 	<!-- Footer Section-->
 
-	<footer class="footer" style="background-color: #000080;">
+	<footer class="footer" style="background-color: rgba(31, 46, 69, 0.95);;">
 
         <div class="container">
 
