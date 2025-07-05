@@ -1,47 +1,104 @@
+body {
+  background-color: #f9f9f9;
+  background-image: url("images/arkaplan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /* navbar */
 
 .navbar-nav .nav-link {
   color: #f0f0f0 !important;
   font-weight: 500;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+/* İkon ile metin arası boşluk */
+.navbar-nav .nav-link i {
+  margin-right: 6px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #99ffcc !important; /* Hoverda aynı açık mavi */
+  color: #99ffcc !important; /* Hoverda açık mavi */
 }
 
-.dropdown-menu {
-  background-color: rgba(31, 46, 69, 0.95);
-  border: none;
-  border-radius: 0.5rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.2s ease-in-out;
-}
-
-.dropdown-item {
-  color: #fff;
-  font-weight: 500;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.dropdown-item:hover {
-  background-color: rgba(77, 166, 255, 0.2);
-  color: #99ffcc;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-
+/* Aktif link stili */
 .navbar-nav .nav-item.active .nav-link {
   color: #99ffcc !important;
   font-weight: 600;
   border-bottom: 2px solid #99ffcc;
 }
 
-/* navbar dropdown */
+/* Dropdown menü */
+.dropdown-menu {
+  background-color: rgba(31, 46, 69, 0.95);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease,
+    transform 0.3s ease;
+  padding: 0.5rem 0;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  /* Dropdown açıldığında göster */
+}
 
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown.show .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  margin-top: 0;
+}
+
+/* Dropdown item */
+.dropdown-item {
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dropdown item ikon boşluğu */
+.dropdown-item i {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+/* Dropdown item hover */
+.dropdown-item:hover {
+  background-color: rgba(77, 166, 255, 0.2);
+  color: #99ffcc;
+  cursor: pointer;
+}
+
+/* Hamburger Menü */
+.navbar-toggler {
+  border-color: #99ffcc;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%2399ffcc' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Sticky navbar */
+#mainNav {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+/* Diğer senin lwptoc ve alt başlık stilin */
 .lwptoc {
   font-family: sans-serif;
 }
@@ -286,4 +343,13 @@
 
 .card-body.active {
   background-color: #c3dbff;
+}
+
+.swiper-container {
+  width: 100%; /* veya uygun genişlik */
+  overflow: hidden;
+}
+
+.swiper-pagination {
+  display: none !important;
 }
