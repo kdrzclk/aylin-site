@@ -499,3 +499,9 @@ a.navbar-brand {
     margin-right: 15px;
   }
 }
+
+a[href="/iletisim.html"]:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  font-weight: 600;
+}
